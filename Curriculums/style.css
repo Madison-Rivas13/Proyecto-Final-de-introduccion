@@ -1,0 +1,135 @@
+
+#Header {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  #Menu li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el contenedor principal */
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para los títulos */
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Estilos para la tabla de experiencia laboral */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid gainsboro;
+    padding: 8px;
+  }
+  
+  /* Estilos para las habilidades y conocimientos */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  
+  
+  .inline li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Modificaciones para agregar más color */
+  #Header {
+    background-color: black; /* Amarillo */
+  }
+  
+  h1 {
+    color: #ff0000; /* Rojo */
+  }
+  
+  h2 {
+    color: #0000ff; /* Azul */
+  }
+  
+  th {
+    background-color: #e6e6e6; /* Gris claro */
+  }
+  
+  td {
+    background-color: #ffffcc; /* Amarillo claro */
+  }
+  
+  ul {
+    color: #008000; /* Verde */
+  }
+  
+  button {
+    background-color: orange; /* Naranja */
+  }
+  body {
+    background-color: black
+  }
+  
+  #Header {
+    background-color: pink; 
+  }
+  
+  #container {
+    background-color: #ffffff; /* Blanco */
+  }
+  
+  h1, h2 {
+    color: #333; /* Color de texto principal */
+  }
+  
+  table {
+    background-color: #ffffff; 
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  ul {
+    color: purple;
+  }
+  
+  form {
+    background-color: #ffffff; /* Blanco */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Verde oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }

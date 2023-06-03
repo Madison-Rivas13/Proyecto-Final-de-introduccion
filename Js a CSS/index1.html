@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambiar estilo con JavaScript</title>
+</head>
+<body>
+  <h1>Ejemplo de cambio de estilo con JavaScript</h1>
+  
+  <p class="elemento">Texto de ejemplo 1</p>
+  <p class="elemento">Texto de ejemplo 2</p>
+  <p class="elemento">Texto de ejemplo 3</p>
+  
+  <button onclick="cambiarEstilo('estilo1')">Estilo 1</button>
+  <button onclick="cambiarEstilo('estilo2')">Estilo 2</button>
+  <button onclick="cambiarEstilo('estilo3')">Estilo 3</button>
+  
+  <script>
+    function cambiarEstilo(estilo) {
+      var elementos = document.getElementsByClassName('elemento');
+      
+      for (var i = 0; i < elementos.length; i++) {
+        var elemento = elementos[i];
+        
+        if (estilo === 'estilo1') {
+          elemento.style.color = 'red';
+          elemento.style.fontSize = '20px';
+          elemento.style.fontWeight = 'bold';
+        } else if (estilo === 'estilo2') {
+          elemento.style.color = 'blue';
+          elemento.style.fontSize = '18px';
+          elemento.style.fontWeight = 'normal';
+        } else if (estilo === 'estilo3') {
+          elemento.style.color = 'green';
+          elemento.style.fontSize = '22px';
+          elemento.style.fontWeight = 'bold';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

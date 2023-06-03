@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambiar estilo con JavaScript</title>
+</head>
+<body>
+  <center>
+    <h1>Ejemplo de cambio de estilo con JavaScript</h1>
+  
+    <p id="elemento">Texto de ejemplo</p>
+    
+    <button onclick="cambiarEstilo('estilo1')">Estilo 1</button>
+    <button onclick="cambiarEstilo('estilo2')">Estilo 2</button>
+    <button onclick="cambiarEstilo('estilo3')">Estilo 3</button>
+    <br>
+    <br>
+    <button id="buttonHorizontal">Horizontal</button>
+    <button id="buttonVertical">Vertical</button>
+    <br>
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  </center>
+  
+<style>
+  .container {
+  max-width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background: teal;
+  margin: 0.1em;
+}
+body{
+  background-color: rgba(20, 142, 142, 0.29);
+}
+</style>
+  <script>
+    function cambiarEstilo(estilo) {
+      var elemento = document.getElementById('elemento');
+      
+      if (estilo === 'estilo1') {
+        elemento.style.color = 'red';
+        elemento.style.fontSize = '20px';
+        elemento.style.fontWeight = 'bold';
+      } else if (estilo === 'estilo2') {
+        elemento.style.color = 'blue';
+        elemento.style.fontSize = '18px';
+        elemento.style.fontWeight = 'normal';
+      } else if (estilo === 'estilo3') {
+        elemento.style.color = 'green';
+        elemento.style.fontSize = '22px';
+        elemento.style.fontWeight = 'bold';
+      }
+    }
+    function aleatorieColor() {
+  const random1 = Math.ceil(Math.random() * 255);
+  const random2 = Math.ceil(Math.random() * 255);
+  const random3 = Math.ceil(Math.random() * 255);
+
+  return `rgb(${random1},${random2},${random3})`;
+}
+
+document.querySelector("#buttonHorizontal").addEventListener("click", () => {
+  document.querySelector(".container").style.display = "flex";
+  document.querySelector(".container").style.flexDirection = "row";
+  document.querySelector(".container").justifyContent = "space-around";
+});
+
+document.querySelector("#buttonVertical").addEventListener("click", () => {
+  document.querySelector(".container").style.display = "flex";
+  document.querySelector(".container").style.flexDirection = "column";
+  document.querySelector(".container").justifyContent = "space-around";
+});
+
+document.querySelectorAll(".square").forEach(square => {
+  square.addEventListener("click", e => {
+    e.target.style.background = aleatorieColor();
+  });
+});
+  </script>
+</body>
+</html>
